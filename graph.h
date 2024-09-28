@@ -9,6 +9,8 @@ class Graph{
         list<Node> graph_nodes;
         list<Edge> graph_edges;
     public:
+        int addNode(Node node);
+        int deleteNode(Node node);
 };
 
 #endif
