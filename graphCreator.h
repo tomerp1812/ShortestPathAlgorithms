@@ -1,5 +1,5 @@
-#ifndef GraphCreator_h
-#define GraphCreator_h
+#ifndef GRAPHCREATOR_H
+#define GRAPHCREATOR_H
 #include "graph.h"
 #include <cstdlib>
 class GraphCreator{
@@ -8,6 +8,6 @@ class GraphCreator{
         float chanceOfEdge;
     public:
         GraphCreator(int numOfNodes, float chanceOfEdge);
-        Graph createGraph();
+        Graph* createGraph();
 };
 #endif

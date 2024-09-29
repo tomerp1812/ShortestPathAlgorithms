@@ -1,16 +1,21 @@
-#ifndef Graph_h
-#define Graph_h
-#include "edge.cpp"
-#include "node.cpp"
+#ifndef GRAPH_H
+#define GRAPH_H
+
+#include "edge.h"
 using namespace std;
 
 class Graph{
     private:
-        list<Node> graph_nodes;
-        list<Edge> graph_edges;
+        vector<Node> graph_nodes;
+        vector<Edge> graph_edges;
+        int numOfNodes;
+        int numOfEdges;
     public:
-        int addNode(Node node);
-        int deleteNode(Node node);
+        int getNumOfEdges();
+        int getNumOfNodes();
+        vector<Node> getNodes();
+        vector<Edge> getEdges();
+        int addNode(Node& node);
 };
 
 #endif
