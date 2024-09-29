@@ -13,6 +13,11 @@ int Node::getId(){
     return this->id;
 }
 
+int Node::getValue()
+{
+    return this->value;
+}
+
 int Node::getNumOfNeighbors(){
     return this->numOfNeighbors;
 }

@@ -13,6 +13,7 @@ class Node{
         Node();
         Node(int value, int id);
         int getId();
+        int getValue();
         int getNumOfNeighbors();
         int addNeighbor(Node& node); 
         bool operator == (const Node& n) const { return id == n.id && value == n.value; }
