@@ -11,11 +11,13 @@ class Graph{
         int numOfNodes;
         int numOfEdges;
     public:
+        Graph();
         int getNumOfEdges();
         int getNumOfNodes();
         vector<Node> getNodes();
         vector<Edge> getEdges();
         int addNode(Node& node);
+        int addEdge(Edge& edge);
 };
 
 #endif

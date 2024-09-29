@@ -9,7 +9,10 @@ class Edge{
         Node from;
         Node to;
     public:
-
+        Edge(Node& from, Node& to, int weight);
+        int getWeight();
+        Node getFrom();
+        Node getTo();
 };
 
 
